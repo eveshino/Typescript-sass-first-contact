@@ -1,0 +1,30 @@
+section.repository-list {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 16px;
+  }
+  ul {
+    list-style: none;
+
+    li {
+      //every li that has a li before will have margin top.  {the first li will not have margin top}
+      & + li {
+        margin-top: 20px;
+      }
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-top: 8px;
+      }
+
+      a {
+        //is a display inline but with block we can give margin height and width
+        display: inline-block;
+        margin-top: 16px;
+        text-decoration: none;
+        color: #8257e6;
+      }
+    }
+  }
+}
