@@ -11,7 +11,6 @@ export function RepositoryItem(props: RepositoryItemProps) {
     <li>
       <strong>{props.repository.name}</strong>
       <p>{props.repository.descriptions}</p>
-
       <a href={props.repository.html_url}>Access the repository</a>
     </li>
   );
